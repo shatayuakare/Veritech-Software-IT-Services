@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --main-bg-color: #be2edd;
+    --text-color: ;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.heading {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: .7rem 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: var(--main-bg-color);
+    color: white;
+
+    border-radius: 1.2rem;
+}
+
+
+.header {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightcoral; */
+    height: 5rem;
+    /* margin-bottom: 1rem; */
+}
+
+.header .row {
+    height: 100%;
+    width: 10%;
+}
+
+.header .box {
+    border: 2.5rem solid var(--main-bg-color);
+}
+
+.header.justify-content-between .box {
+    border-color: purple;
+}
+
+.header .float-end.row .box.boxc {
+    border-left-color: transparent;
+}
+
+.header .float-start.row .box.boxc {
+    border-right-color: transparent;
+}
+
+.company-info {
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+}
+
+.card-container {
+    gap: 1rem;
+}
+
+.card {
+    flex: 1;
+    padding: .5rem;
+    border: none !important;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0;
+    text-align: center;
+}
+
+.card .card-body {
+    padding: 0;
+}
+
+.card img.card-img-top {
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    border-radius: 50%;
+    border: .2rem solid var(--main-bg-color);
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card img.card-img-top:hover {
+    scale: 105%;
+}
